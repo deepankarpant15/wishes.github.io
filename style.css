@@ -1,0 +1,112 @@
+body {
+    /* font-family: 'Arial', sans-serif; */
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #bf1ca1;
+    font-family: 'Carattere', cursive;
+    animation-name: hinge; /* Add hinge animation to the heading */
+    animation-duration: 2s; /* Set hinge animation duration */
+}
+
+.one {
+    color: #2e2394ea;
+    font-family: 'Acme', cursive;
+    font-size: 23px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s; 
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.two {
+    color: #ad2929d2;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 19px;
+    animation-name: backInRight; /* Add backInRight animation to the paragraph */
+    animation-duration: 1.5s; /* Set backInRight animation duration */
+}
+
+.three {
+    color: #b8157f;
+    font-size: 1.2em;
+    animation-name: backInRight; /* Add backInRight animation to the paragraph */
+    animation-duration: 1.5s; /* Set backInRight animation duration */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hinge {
+    0% {
+        transform-origin: top left;
+        transform: rotate(0);
+    }
+    20% {
+        transform-origin: top left;
+        transform: rotate(9deg);
+    }
+    40% {
+        transform-origin: top left;
+        transform: rotate(-8deg);
+    }
+    60% {
+        transform-origin: top left;
+        transform: rotate(6deg);
+    }
+    80% {
+        transform-origin: top left;
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform-origin: top left;
+        transform: rotate(0);
+    }
+}
+
+@keyframes backInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

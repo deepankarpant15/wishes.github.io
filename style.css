@@ -39,7 +39,7 @@ h1 {
     color: #ad2929d2;
     font-family: 'Architects Daughter', cursive;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 17px;
     animation-name: backInRight; /* Add backInRight animation to the paragraph */
     animation-duration: 1.5s; /* Set backInRight animation duration */
 }
